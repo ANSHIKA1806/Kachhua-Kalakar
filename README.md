@@ -6,13 +6,13 @@ A group of amazing Py-Turtle patterns made by me, inspired from some standard ve
 
 | S.No. | Pattern Name | File Link | Screen-shot |
 |-------|--------------|-----------|-------------|
-| 1 | Rainbow Wheel  | [Pattern 1](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat1.py) | |
-| 2 | Fibonacci Star | [Pattern 2](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat2.py) | |
-| 3 | Coloured Hexagons | [Pattern 3](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat3.py) | |
-| 4 | Clock Radial | [Pattern 4](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat4.py) | |
-| 5 | Graph Paper | [Pattern 5](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat5.py) | |
-| 6 | Coloured Rings | [Pattern 6](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat6.py) | |
-| 7 | Corona Virus | [Pattern 7](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat7.py) | |
-| 8 | Heart | [Pattern 8](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat8.py) | |
-| 9 | Circular Tree | [Pattern 9](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat9.py) | |
-| 10 | The Zigurat | [Pattern 10](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat10.py) | |
+| 1 | Rainbow Wheel  | [Pattern 1](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat1.py) | [Img1](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/s10.jpg) |
+| 2 | Fibonacci Star | [Pattern 2](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat2.py) | [Img2](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/s9.jpg) |
+| 3 | Coloured Hexagons | [Pattern 3](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat3.py) | [Img3](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/s8.jpg) |
+| 4 | Clock Radial | [Pattern 4](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat4.py) | [Img4](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/s7.jpg) |
+| 5 | Graph Paper | [Pattern 5](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat5.py) | [Img5](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/s6.jpg) |
+| 6 | Coloured Rings | [Pattern 6](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat6.py) | [Img6](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/s5.jpg) |
+| 7 | Corona Virus | [Pattern 7](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat7.py) | [Img7](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/s4.jpg) |
+| 8 | Heart | [Pattern 8](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat8.py) | [Img8](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/s3.jpg) |
+| 9 | Circular Tree | [Pattern 9](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat9.py) | [Img9](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/s2.jpg) |
+| 10 | The Zigurat | [Pattern 10](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat10.py) | [Img10](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/s1.jpg) |
