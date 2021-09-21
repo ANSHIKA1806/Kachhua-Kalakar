@@ -1,28 +1,29 @@
 import turtle
 
 
-def gajurel(x, y):
-    turtle.setx(x)
-    turtle.sety(y)
-    print(x, y)
+def getPosition(x, y):
+        turtle.setx(x)
+        turtle.sety(y)
+        print(x, y)
 
+class Pikachu:
 
-class Cartoon:
-
-    def _init_(self):
+    def __init__(self):
         self.t = turtle.Turtle()
         t = self.t
         t.pensize(3)
         t.speed(9)
-        t.ondrag(gajurel)
+        t.ondrag(getPosition)
 
-    def meme(self, x, y):
+    
+        
+    def noTrace_goto(self, x, y):
         self.t.penup()
         self.t.goto(x, y)
         self.t.pendown()
 
-    def aankha1(self, x, y):
-        self.meme(x, y)
+    def leftEye(self, x, y):
+        self.noTrace_goto(x, y)
         t = self.t
         t.seth(0)
         t.fillcolor('#333333')
@@ -30,20 +31,20 @@ class Cartoon:
         t.circle(22)
         t.end_fill()
 
-        self.meme(x, y + 10)
+        self.noTrace_goto(x, y+10)
         t.fillcolor('#000000')
         t.begin_fill()
         t.circle(10)
         t.end_fill()
 
-        self.meme(x + 6, y + 22)
+        self.noTrace_goto(x+6, y + 22)
         t.fillcolor('#ffffff')
         t.begin_fill()
         t.circle(10)
         t.end_fill()
 
-    def aankha2(self, x, y):
-        self.meme(x, y)
+    def rightEye(self, x, y):
+        self.noTrace_goto(x, y)
         t = self.t
         t.seth(0)
         t.fillcolor('#333333')
@@ -51,25 +52,25 @@ class Cartoon:
         t.circle(22)
         t.end_fill()
 
-        self.meme(x, y + 10)
+        self.noTrace_goto(x, y+10)
         t.fillcolor('#000000')
         t.begin_fill()
         t.circle(10)
         t.end_fill()
 
-        self.meme(x - 6, y + 22)
+        self.noTrace_goto(x-6, y + 22)
         t.fillcolor('#ffffff')
         t.begin_fill()
         t.circle(10)
         t.end_fill()
 
-    def mukh(self, x, y):
-        self.meme(x, y)
+    def mouth(self, x, y):
+        self.noTrace_goto(x, y)
         t = self.t
 
         t.fillcolor('#88141D')
         t.begin_fill()
-        #
+        # 下嘴唇
         l1 = []
         l2 = []
         t.seth(190)
@@ -79,9 +80,9 @@ class Cartoon:
             t.right(3)
             t.fd(a)
             l1.append(t.position())
-
-        self.meme(x, y)
-
+        
+        self.noTrace_goto(x, y)
+        
         t.seth(10)
         a = 0.7
         for i in range(28):
@@ -89,14 +90,14 @@ class Cartoon:
             t.left(3)
             t.fd(a)
             l2.append(t.position())
-
-        #
-
+        
+        # 上嘴唇
+        
         t.seth(10)
         t.circle(50, 15)
         t.left(180)
         t.circle(-50, 15)
-
+        
         t.circle(-50, 40)
         t.seth(233)
         t.circle(-50, 55)
@@ -104,31 +105,31 @@ class Cartoon:
         t.circle(50, 12.1)
         t.end_fill()
 
-        #
-        self.meme(17, 54)
+        # 舌头
+        self.noTrace_goto(17, 54)
         t.fillcolor('#DD716F')
         t.begin_fill()
         t.seth(145)
         t.circle(40, 86)
         t.penup()
         for pos in reversed(l1[:20]):
-            t.goto(pos[0], pos[1] + 1.5)
+            t.goto(pos[0], pos[1]+1.5)
         for pos in l2[:20]:
-            t.goto(pos[0], pos[1] + 1.5)
+            t.goto(pos[0], pos[1]+1.5)
         t.pendown()
         t.end_fill()
 
-        #
-        self.meme(-17, 94)
+        # 鼻子
+        self.noTrace_goto(-17, 94)
         t.seth(8)
         t.fd(4)
         t.back(8)
 
-    #
-    def gaala1(self, x, y):
+    # 红脸颊
+    def leftCheek(self, x, y):
         turtle.tracer(False)
         t = self.t
-        self.meme(x, y)
+        self.noTrace_goto(x, y)
         t.seth(300)
         t.fillcolor('#DD4D28')
         t.begin_fill()
@@ -145,10 +146,10 @@ class Cartoon:
         t.end_fill()
         turtle.tracer(True)
 
-    def gaala2(self, x, y):
+    def rightCheek(self, x, y):
         t = self.t
         turtle.tracer(False)
-        self.meme(x, y)
+        self.noTrace_goto(x, y)
         t.seth(60)
         t.fillcolor('#DD4D28')
         t.begin_fill()
@@ -165,9 +166,9 @@ class Cartoon:
         t.end_fill()
         turtle.tracer(True)
 
-    def kaan1(self, x, y):
+    def colorLeftEar(self, x, y):
         t = self.t
-        self.meme(x, y)
+        self.noTrace_goto(x, y)
         t.fillcolor('#000000')
         t.begin_fill()
         t.seth(330)
@@ -178,10 +179,11 @@ class Cartoon:
         t.circle(-30, 50)
         t.circle(-300, 10)
         t.end_fill()
+        
 
-    def kaan2(self, x, y):
+    def colorRightEar(self, x, y):
         t = self.t
-        self.meme(x, y)
+        self.noTrace_goto(x, y)
         t.fillcolor('#000000')
         t.begin_fill()
         t.seth(300)
@@ -192,13 +194,14 @@ class Cartoon:
         t.seth(190)
         t.circle(300, 17)
         t.end_fill()
+    
 
-    def jiu(self):
+    def body(self):
         t = self.t
 
         t.fillcolor('#F6D02F')
         t.begin_fill()
-        #
+        # 右脸轮廓
         t.penup()
         t.circle(130, 40)
         t.pendown()
@@ -206,32 +209,32 @@ class Cartoon:
         t.left(180)
         t.circle(-100, 5)
 
-        #
+        # 右耳朵
         t.seth(20)
         t.circle(300, 30)
         t.circle(30, 50)
         t.seth(190)
         t.circle(300, 36)
 
-        #
+        # 上轮廓
         t.seth(150)
         t.circle(150, 70)
-
-        #
+        
+        # 左耳朵
         t.seth(200)
         t.circle(300, 40)
         t.circle(30, 50)
         t.seth(20)
         t.circle(300, 35)
-        # print(t.pos())
+        #print(t.pos())
 
-        #
+        # 左脸轮廓
         t.seth(240)
         t.circle(105, 95)
         t.left(180)
         t.circle(-105, 5)
 
-        #
+        # 左手
         t.seth(210)
         t.circle(500, 18)
         t.seth(200)
@@ -264,7 +267,7 @@ class Cartoon:
         t.seth(250)
         t.circle(100, 65)
 
-        #
+        # 左脚
         t.seth(320)
         t.circle(100, 5)
         t.left(180)
@@ -287,7 +290,7 @@ class Cartoon:
         t.seth(10)
         t.circle(100, 60)
 
-        #
+        # 横向
         t.seth(180)
         t.circle(-100, 10)
         t.left(180)
@@ -299,7 +302,7 @@ class Cartoon:
         t.left(180)
         t.circle(-100, 10)
 
-        #
+        # 右脚
         t.seth(290)
         t.circle(100, 55)
         t.circle(10, 50)
@@ -323,7 +326,7 @@ class Cartoon:
         t.seth(100)
         t.circle(100, 40)
 
-        #
+        # 右侧身体轮廓
         t.seth(200)
         t.circle(-100, 5)
         t.left(180)
@@ -335,9 +338,10 @@ class Cartoon:
         t.left(180)
         t.circle(300, 3)
 
-        #
+        # 右手
         t.seth(43)
         t.circle(200, 60)
+        
 
         t.right(10)
         t.fd(10)
@@ -347,6 +351,7 @@ class Cartoon:
         t.circle(5, 160)
         t.seth(90)
 
+        
         t.fd(10)
         t.seth(90)
         t.circle(5, 180)
@@ -360,15 +365,16 @@ class Cartoon:
         t.seth(240)
         t.circle(50, 30)
 
+        
         t.end_fill()
-        self.meme(130, 125)
+        self.noTrace_goto(130, 125)
         t.seth(-20)
         t.fd(5)
         t.circle(-5, 160)
         t.fd(5)
 
-        #
-        self.meme(166, 130)
+        # 手指纹
+        self.noTrace_goto(166, 130)
         t.seth(-90)
         t.fd(3)
         t.circle(-4, 180)
@@ -378,8 +384,8 @@ class Cartoon:
         t.circle(-4, 180)
         t.fd(3)
 
-        #
-        self.meme(168, 134)
+        # 尾巴
+        self.noTrace_goto(168, 134)
         t.fillcolor('#F6D02F')
         t.begin_fill()
         t.seth(40)
@@ -406,7 +412,7 @@ class Cartoon:
         t.right(15)
         t.circle(-300, 2)
         ##############
-        # print(t.pos())
+        #print(t.pos())
         t.seth(30)
         t.fd(40)
         t.left(100)
@@ -421,11 +427,13 @@ class Cartoon:
         t.fd(10)
         t.end_fill()
 
-        #
-        t.fillcolor('#923E24')
-        self.meme(126.82, -156.84)
-        t.begin_fill()
 
+
+        # 尾巴花纹 
+        t.fillcolor('#923E24')
+        self.noTrace_goto(126.82, -156.84)
+        t.begin_fill()
+        
         t.seth(30)
         t.fd(40)
         t.left(100)
@@ -457,19 +465,23 @@ class Cartoon:
         t.right(15)
         t.circle(-300, 2)
         t.end_fill()
+        
 
-        self.topi(-134.07, 147.81)
-        self.mukh(-5, 25)
-        self.gaala1(-126, 32)
-        self.gaala2(107, 63)
-        self.kaan1(-250, 100)
-        self.kaan2(140, 270)
-        self.aankha1(-85, 90)
-        self.aankha2(50, 110)
+        # 帽子、眼睛、嘴巴、脸颊
+        self.cap(-134.07, 147.81)
+        self.mouth(-5, 25)
+        self.leftCheek(-126, 32)
+        self.rightCheek(107, 63)
+        self.colorLeftEar(-250, 100)
+        self.colorRightEar(140, 270)
+        self.leftEye(-85, 90)
+        self.rightEye(50, 110)
         t.hideturtle()
+        
 
-    def topi(self, x, y):
-        self.meme(x, y)
+
+    def cap(self, x, y):
+        self.noTrace_goto(x, y)
         t = self.t
         t.fillcolor('#CD0000')
         t.begin_fill()
@@ -492,7 +504,7 @@ class Cartoon:
         t.fd(50)
         t.circle(8, 100)
         t.end_fill()
-        self.meme(-168.47, 185.52)
+        self.noTrace_goto(-168.47, 185.52)
         t.seth(36)
         t.circle(-270, 54)
         t.left(180)
@@ -507,11 +519,11 @@ class Cartoon:
         t.circle(200, 45)
         t.end_fill()
 
-        self.meme(-58, 270)
+        self.noTrace_goto(-58, 270)
         t.pencolor('#228B22')
         t.dot(35)
 
-        self.meme(-30, 280)
+        self.noTrace_goto(-30, 280)
         t.fillcolor('#228B22')
         t.begin_fill()
         t.seth(100)
@@ -525,18 +537,22 @@ class Cartoon:
         t.end_fill()
         t.pencolor('#000000')
 
+
+
+
     def start(self):
-        self.jiu()
+        self.body()
+
 
 
 def main():
-    print('Painting the Cartoon... ')
+    print('Painting the Pikachu... ')
     turtle.screensize(800, 600)
-    turtle.title('Cartoon')
-    cartoon = Cartoon()
-    cartoon.start()
+    turtle.title('Pikachu')
+    pikachu = Pikachu()
+    pikachu.start()
     turtle.mainloop()
+    
 
-
-if _name_ == '_main_':
+if __name__ == '__main__':
     main()
