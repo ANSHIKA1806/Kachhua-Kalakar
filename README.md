@@ -17,3 +17,6 @@ A group of amazing Py-Turtle patterns made by me, inspired from some standard ve
 | 8 | Heart | [Pattern 8](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat8.py) | [Img8](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/s3.jpg) |
 | 9 | Circular Tree | [Pattern 9](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat9.py) | [Img9](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/s2.jpg) |
 | 10 | The Zigurat | [Pattern 10](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat10.py) | [Img10](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/s1.jpg) |
+| 11 | Ironman Face | [Pattern 11](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat11.py) | [Img11](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/s11.jpg) |
+| 10 | Pickachu | [Pattern 12](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat12.py) | [Img12](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/s12.jpg) |
+| 10 | Shinchan | [Pattern 13](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/pat13.py) | [Img13](https://raw.githubusercontent.com/MainakRepositor/Kachhua-Kalakar/master/s13.jpg) |
